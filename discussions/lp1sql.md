@@ -1,5 +1,5 @@
--echo on
--headers on
+--echo on
+--headers on
 
 --Lesson Plan 1
 
