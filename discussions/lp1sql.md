@@ -1,4 +1,5 @@
-
+echo on
+headers on
 
 --Lesson Plan 1
 
