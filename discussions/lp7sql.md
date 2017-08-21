@@ -50,7 +50,7 @@ FROM Sales.Customers AS C
      WHERE O.custid = C.custid
      ORDER BY orderdate DESC, orderid DESC) AS A;
      
-     SELECT C.custid, A.orderid, A.orderdate
+SELECT C.custid, A.orderid, A.orderdate
 FROM Sales.Customers AS C
   OUTER APPLY
     (SELECT TOP (3) orderid, empid, orderdate, requireddate
