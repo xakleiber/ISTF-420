@@ -15,13 +15,7 @@
  - Does depend on tables from other queries.
 
 4. Give an example of a subquery that returns a single value. When would you use this kind of subquery?
- - select firstname + ' ' + lastname + ' is Employee of the Month!' as winner
-  from hr.Employees
-  where empid=
-  (select TOP 1 empid
-  from sales.orders
-  group by empid
-  order by count(*) desc);
+ - select order id from sales.order avg
   
   When you only want one result.
 
