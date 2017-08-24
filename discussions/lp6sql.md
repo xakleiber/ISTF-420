@@ -20,12 +20,12 @@
   When you only want one result.
 
 5. Give an example of a subquery that returns multiple values. When would you use this kind of subquery?
- -   select firstname + ' ' + lastname + ' had no sales in May, 2016.' as counsel
+ -   `select firstname + ' ' + lastname + ' had no sales in May, 2016.' as counsel
   from hr.Employees
   where empid NOT IN
   (select empid
   from sales.orders
-  where orderdate like '2016-05%');
+  where orderdate like '2016-05%');`
   
   Used to filter results.
 
